@@ -1,0 +1,25 @@
+/*ROOTS*/
+:root{
+    --nav-bar-w: 200px;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.ms_nav-bar{
+    padding-top: 3.5rem;
+    height: 100vh;
+    width: var(--nav-bar-w);
+    background-color: blue;
+}
+
+.ms_main{
+    padding-top: 3.5rem;
+    height: 100vh;
+    width: calc(100% - var(--nav-bar-w));
+    background-color: brown;
+}
