@@ -15,42 +15,91 @@
     <section id="header">
         <nav class="navbar navbar-expand-sm bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <nav class="navbar bg-light">
-                <form class="container-fluid">
-                  <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                </form>
-              </nav>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
+
+
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" alt="logo boolean">
+                        </a>
+
+                        <nav class="navbar bg-light">
+                            <form class="container-fluid flex-grow">
+                                <div class="input-group row-xl">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-solid fa-magnifying-glass"></i> 
+                                    </span>
+                                    <input type="text" class="form-control" sixe="5" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </form>
+                        </nav>
+
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav mx-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                            </a>
+                            <ul class="dropdown-menu zone">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+
+                </div>
             </div>
           </nav>
     </section>
-    <section id="nav-bar" class="ms_nav-bar"></section>
+    <section id="side-bar" class="ms_side-bar">
+        <div class="container-sm">
+            <div class="flex-column text-white justify-content-space-between align-items-center">
+                <div class="col-12">
+                    <ul class="list-group">
+                        <li><a href="">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="appear">Home</span>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="appear">Stats</span>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-solid fa-signal"></i> 
+                            <span class="appear">Signals</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-12 align-items-end">
+                    <ul class="list-group">
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="appear">Admin</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="main" class="ms_main"></section>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

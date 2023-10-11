@@ -1,8 +1,13 @@
 /*ROOTS*/
 :root{
-    --nav-bar-w: 200px;
+    --side-bar-w-md: 200px;
+    --side-bar-w-sm: 100px;
 }
 
+.zone{
+    right: 10px important;
+    top:1rem important;
+}
 
 body{
     width: 100%;
@@ -10,16 +15,34 @@ body{
     display: flex;
 }
 
-.ms_nav-bar{
-    padding-top: 3.5rem;
+
+.appear{
+    display: none;
+}
+
+
+.ms_side-bar{
+    padding-top: 5rem;
     height: 100vh;
-    width: var(--nav-bar-w);
+    width: var(--side-bar-w-sm);
     background-color: blue;
 }
 
 .ms_main{
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     height: 100vh;
-    width: calc(100% - var(--nav-bar-w));
+    width: calc(100% - var(--side-bar-w-sm));
     background-color: brown;
+}
+
+@media screen and (min-width: 576px) {
+    .ms_side-bar{
+        width: var(--side-bar-w-md);
+    }
+    .ms_main{
+        width: calc(100% - var(--side-bar-w-sm));
+    }
+    .appear{
+        display: inline-block;
+    }
 }
