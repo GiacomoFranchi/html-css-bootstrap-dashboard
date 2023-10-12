@@ -67,6 +67,7 @@ body{
     height: 100%;
     width: var(--side-bar-w);
     background-color:var(--bgcolor-side-bar);
+    background-image: url(../img/sidebar-bg.png);
     display: flex;
     flex-direction: column;
     justify-content:space-between;
