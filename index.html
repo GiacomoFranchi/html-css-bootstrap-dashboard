@@ -17,8 +17,8 @@
             <div class="container-fluid  ">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <img  class="ms_img disappear" src="img/mobile-logo.png" alt="">
-                        <img class="ms_img appear py-2" src="img/logo.svg" alt="logo boolean">
+                        <img  class="ms_logo disappear" src="img/mobile-logo.png" alt="">
+                        <img class="ms_logo appear py-2" src="img/logo.svg" alt="logo boolean">
                     </div>
                     <div class="col input-group">
                         <span class="input-group-text" id="basic-addon1">
@@ -30,17 +30,17 @@
                         <ul class="d-flex list-unstyled mb-0">
                             <li class="mx-3">
                                 <a class="" aria-current="page" href="#">
-                                    <i class="fa-solid fa-list-ul ms_size"></i>
+                                    <i class="fa-solid fa-list-ul ms_size color-gray"></i>
                                 </a>
                             </li>
                             <li class="mx-3">
                                 <a class="" href="#">
-                                    <i class="fa-solid fa-circle-question ms_size"></i>
+                                    <i class="fa-solid fa-circle-question ms_size color-gray"></i>
                                 </a>
                             </li>
                             <li class="mx-3">
                                 <a class="" href="#">
-                                    <i class="fa-solid fa-ellipsis-vertical ms_size"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical ms_size color-gray"></i>
                                 </a>
                             </li>
                         </ul>
@@ -62,36 +62,39 @@
     <!--Main-->
     <main class="ms_main">
         <!--Side Bar-->
-        <section id="side-bar" class="ms_side-bar">
-        <div class="container-sm">
-            <div class="flex-column text-white justify-content-space-between align-items-center">
-                <div class="col-12">
-                    <ul class="list-group">
-                        <li><a href="">
-                            <i class="fa-solid fa-house"></i>
-                            <span class="appear">Home</span>
-                        </a></li>
-                        <li><a href="">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <span class="appear">Stats</span>
-                        </a></li>
-                        <li><a href="">
-                            <i class="fa-solid fa-signal"></i> 
-                            <span class="appear">Signals</span>
-                        </a></li>
-                    </ul>
-                </div>
-                <div class="col-12 align-items-end">
-                    <ul class="list-group">
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-gear"></i>
-                                <span class="appear">Admin</span>
-                        </a></li>
-                    </ul>
-                </div>
+        <section id="side-bar" class="ms_side-bar py-3">
+            <div class="col-12">
+                <ul class="list-unstyled">
+                    <li class="my-3">
+                        <a class="text-decoration-none" href="">
+                            <i class="fa-solid fa-house fs-2 text-white"></i>
+                            <span class="appear text-white fs-3 mx-3">Home</span>
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a class="text-decoration-none" href="">
+                            <i class="fa-solid fa-chart-simple fs-2 text-white"></i>
+                            <span class="appear text-white fs-3 mx-3">Stats</span>
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a class="text-decoration-none" href="">
+                            <i class="fa-solid fa-signal fs-2 text-white"></i> 
+                            <span class="appear text-white fs-3 mx-3">Signals</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
+            <div class="col-12 align-items-end">
+                <ul class="list-group">
+                    <li>
+                        <a class="text-decoration-none" href="">
+                            <i class="fa-solid fa-gear fs-2 text-white"></i>
+                            <span class="appear text-white fs-3 mx-3">Admin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--Screen-->
         <section class="ms_screen">

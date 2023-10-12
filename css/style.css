@@ -1,18 +1,34 @@
 /*ROOTS*/
 :root{
-    --side-bar-w: 100px;
+    --side-bar-w: 80px;
+
+    /*COLORS*/
+    --bgcolor-side-bar: rgb(13, 37, 59);
 }
 
 @media screen and (min-width: 992px) {
     :root{
-        --side-bar-w: 250px;
+        --side-bar-w: 200px;
     }
 }
+
+/*COMMON*/
 .zone{
     right: 10px important;
     top:1rem important;
 }
 
+.ms_size{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.appear{
+    display: none;
+}
+
+
+/*BODY*/
 body{
     width: 100%;
     height: 100vh;
@@ -25,18 +41,9 @@ body{
     height: 50px;
 }
 
-.appear{
-    display: none;
-}
-
-.ms_img{
+.ms_logo{
     height: 50px;
     line-height:50px;
-}
-
-.ms_size{
-    font-size: 1.5rem;
-    color: gray;
 }
 
 @media screen and (min-width: 992px) {
@@ -55,10 +62,22 @@ body{
     display: flex;
 }
 
+/*SIDE BAR*/
 .ms_side-bar{
     height: 100%;
     width: var(--side-bar-w);
-    background-color: palegoldenrod;
+    background-color:var(--bgcolor-side-bar);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .ms_side-bar{
+        text-align: start;
+       padding-left:1rem;
+    }
 }
 
 .ms_screen{
