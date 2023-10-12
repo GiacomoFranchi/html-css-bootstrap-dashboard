@@ -2,7 +2,7 @@
 :root{
     /*SIZE*/
     --side-bar-w: 80px;
-    --hero-h: 300px;
+    --hero-h: 30%;
 
     /*COLORS*/
     --bgcolor-side-bar: rgb(13, 37, 59);
@@ -17,7 +17,7 @@
 }
 @media screen and (min-width: 576px) {
     :root{
-        --hero-h: 160px
+        --hero-h: 15%;
         }
 }
 
@@ -37,10 +37,16 @@
 }
 
 .ms_btn{
-    padding: 0 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
     border: 1px solid white;
     border-radius: 5px;
     background-color: var(--bgcolor-hero);
+    line-height: 1rem;
+}
+
+.ms_letter-sp{
+    letter-spacing: -0.3rem;
 }
 
 /*BODY*/
@@ -138,7 +144,6 @@ body{
 .ms_box-l{
     width: 100%;
     height: 800px;
-    background-color: blueviolet;
 }
 
 .ms_box-r{
@@ -160,14 +165,37 @@ body{
     }
 }
 
-.top-box{
-    height: 450px;
-    width: 100%;
-    background-color: antiquewhite;
+.ms_img-tab{
+    height: 2rem;
+}
+
+th, td{
+    text-align: center;
+}
+
+th:first-child, td:first-child{
+    text-align: start;
+}
+
+@media screen and (min-whidt: 576px) {
+    .appear1{
+        display: table-cell;
+    }
+}
+
+.ms_hover-hide{
+    display: none;
+}
+
+.ms_hover:hover + .ms_hover-hide{
+    display: inline-block;
+}
+
+.ms_hover:hover .ms_transform{
+    transform: rotate(180deg);
 }
 
 .bottom-box{
     height: 300px;
     width: 100%;
-    background-color: pink;
 }
