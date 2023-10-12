@@ -1,15 +1,24 @@
 /*ROOTS*/
 :root{
+    /*SIZE*/
     --side-bar-w: 80px;
+    --hero-h: 300px;
 
     /*COLORS*/
     --bgcolor-side-bar: rgb(13, 37, 59);
+    --bgcolor-hero: rgb(27, 114, 232);
+    --color-btn-h: rgb(27, 60, 250)
 }
 
 @media screen and (min-width: 992px) {
     :root{
         --side-bar-w: 200px;
     }
+}
+@media screen and (min-width: 576px) {
+    :root{
+        --hero-h: 160px
+        }
 }
 
 /*COMMON*/
@@ -27,6 +36,12 @@
     display: none;
 }
 
+.ms_btn{
+    padding: 0 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: var(--bgcolor-hero);
+}
 
 /*BODY*/
 body{
@@ -81,57 +96,41 @@ body{
     }
 }
 
+
+/*SCREEN*/
 .ms_screen{
     height: 100%;
     width: calc(100% - var(--side-bar-w));
 }
 
-
-
-
-
+/*HERO*/
 .hero{
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    background-color:var(--bgcolor-hero);
+    height: var(--hero-h);
 }
 
-.new-st{
-    width: 100%;
-    height: 33px;
-    background-color: silver;
-}
-
-.piani{
-    width: 100%;
-    height: 33px;
-    background-color: yellow;
-}
-
-.online{
-    width: 100%;
-    height: 33px;
-    background-color: greenyellow;
+.ms_btn-h{
+    background-color: var(--color-btn-h);
+    opacity: 1;
+    padding:0 0.5rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 0.8rem;
+    height: 1.2rem;
 }
 
 @media screen and (min-width: 576px) {
-    .hero{
-        display: flex;
-        position: relative;
-    }
-    .new-st, .piani, .online{
-        width:calc(100% / 3 ) ;
-        padding: 1rem;
-    }
-    .new-st{
+    .ms_order{
         order: 4;
     }
-
 }
 
+
+/*MAIN SCREEN*/
 .ms_box{
     width: 100%;
-    height: calc(100% - 100px );
+    height: calc(100% - var(--hero-h) );
     overflow-y: auto;
     padding: 1rem;
 }
