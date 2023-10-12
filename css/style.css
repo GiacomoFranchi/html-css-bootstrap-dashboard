@@ -102,7 +102,9 @@ body{
     }
 }
 
-
+.ms_shadow:hover{
+    background-color: grey;
+}
 /*SCREEN*/
 .ms_screen{
     height: 100%;
@@ -129,6 +131,30 @@ body{
 @media screen and (min-width: 576px) {
     .ms_order{
         order: 4;
+    }
+}
+
+.ms_inactive{
+    color: black;
+    background-color: white;
+    position: absolute;
+    right:  0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+    padding: 2rem;
+}
+
+.ms_active:active + .ms_inactive{
+    display: block;
+
+}
+
+@media screen and (min-width: 992px) {
+    .ms_inactive{
+        width: 50%;
     }
 }
 

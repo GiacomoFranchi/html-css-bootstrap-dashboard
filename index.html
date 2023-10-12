@@ -65,19 +65,19 @@
         <section id="side-bar" class="ms_side-bar py-3">
             <div class="col-12">
                 <ul class="list-unstyled">
-                    <li class="my-3">
+                    <li class="my-3 ms_shadow">
                         <a class="text-decoration-none" href="">
                             <i class="fa-solid fa-house fs-2 text-white"></i>
                             <span class="appear text-white fs-3 mx-3">Home</span>
                         </a>
                     </li>
-                    <li class="my-3">
+                    <li class="my-3 ms_shadow">
                         <a class="text-decoration-none" href="">
                             <i class="fa-solid fa-chart-simple fs-2 text-white"></i>
                             <span class="appear text-white fs-3 mx-3">Stats</span>
                         </a>
                     </li>
-                    <li class="my-3">
+                    <li class="my-3 ms_shadow">
                         <a class="text-decoration-none" href="">
                             <i class="fa-solid fa-signal fs-2 text-white"></i> 
                             <span class="appear text-white fs-3 mx-3">Signals</span>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-12 align-items-end">
                 <ul class="list-group">
-                    <li>
+                    <l class="ms_shadow">
                         <a class="text-decoration-none" href="">
                             <i class="fa-solid fa-gear fs-2 text-white"></i>
                             <span class="appear text-white fs-3 mx-3">Admin</span>
@@ -104,7 +104,59 @@
                     <div class="row">
                         <div class="col-8 col-sm-3 ms_order d-flex mb-3 justify-content-start align-items-baseline">
                             <h5>Nuovo Studente</h5>
-                            <button type="button" class=" ms_btn text-white ms-4">+</button>
+                            <button type="button" class=" ms_btn text-white ms-4 ms_active">+</button>
+                            <div class="ms_inactive">
+                                <form class="row g-3">
+                                    <h4>Inserisci un nuovo studente</h4>
+                                    <div class="col-md-6">
+                                        <label for="inputname" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="inputname">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputlastname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="inputlastname">
+                                      </div>
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>scegli...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                        Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
+                            </div>
                         </div>
                         <div class="col-10 col-sm-5 d-flex mb-3">
                             <div class="row">
